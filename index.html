@@ -467,6 +467,7 @@
                 class="input-mail"
                 type="email"
                 name="usermail"
+                id="usermail"
                 placeholder="E-mail"
             /></label>
 
@@ -479,5 +480,61 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-open">
+      <div class="modal">
+        <button class="close-button">
+          <svg class="close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="modal-header">
+          Leave your contacts and we will call you back
+        </p>
+        <form class="modal-form">
+          <div class="name-div">
+            <label class="form-label" for="username">Name</label>
+            <div class="input-container">
+              <input
+                type="text"
+                class="form-input"
+                name="username"
+                id="username"
+              />
+              <svg class="user-icon" width="12" height="12">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="tel-div">
+            <label class="form-label" for="usertel">Phone</label>
+            <div class="input-container">
+              <input
+                type="tel"
+                class="form-input"
+                name="usertel"
+                id="usertel"
+              />
+              <svg class="user-icon" width="13" height="13">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="mail-div">
+            <label class="form-label" for="usermail">Name</label>
+            <div class="input-container">
+              <input
+                type="email"
+                class="form-input"
+                name="usermail"
+                id="usermail"
+              />
+              <svg class="user-icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-envelop"></use>
+              </svg>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
