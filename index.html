@@ -462,12 +462,12 @@
         <div class="footer-input">
           <p class="input-header">Subscribe</p>
           <form class="footer-form" name="subscribe-form">
-            <label for="usermail"
+            <label for="footer-usermail"
               ><input
                 class="input-mail"
                 type="email"
                 name="usermail"
-                id="usermail"
+                id="footer-usermail"
                 placeholder="E-mail"
             /></label>
 
@@ -482,7 +482,7 @@
     </footer>
     <div class="backdrop is-open">
       <div class="modal">
-        <button class="close-button">
+        <button type="button" class="close-button">
           <svg class="close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -491,9 +491,9 @@
           Leave your contacts and we will call you back
         </p>
         <form class="modal-form">
-          <div class="name-div">
+          <div class="form-div">
             <label class="form-label" for="username">Name</label>
-            <div class="input-container">
+            <div class="name-input-container">
               <input
                 type="text"
                 class="form-input"
@@ -505,34 +505,58 @@
               </svg>
             </div>
           </div>
-          <div class="tel-div">
+          <div class="form-div">
             <label class="form-label" for="usertel">Phone</label>
-            <div class="input-container">
+            <div class="tel-input-container">
               <input
                 type="tel"
                 class="form-input"
                 name="usertel"
                 id="usertel"
               />
-              <svg class="user-icon" width="13" height="13">
+              <svg class="tel-icon" width="13" height="13">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
           </div>
-          <div class="mail-div">
-            <label class="form-label" for="usermail">Name</label>
-            <div class="input-container">
+          <div class="form-div">
+            <label class="form-label" for="usermail">Email</label>
+            <div class="mail-input-container">
               <input
                 type="email"
                 class="form-input"
                 name="usermail"
                 id="usermail"
               />
-              <svg class="user-icon" width="16" height="12">
+              <svg class="mail-icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelop"></use>
               </svg>
             </div>
           </div>
+          <div class="textarea-div">
+            <label class="form-label">Comment</label
+            ><textarea
+              name="comment"
+              class="textarea"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              class="modal-checkbox visually-hidden"
+              name="accept"
+              id="accept"
+              value="true"
+            /><label for="accept" class="form-label checkbox-label"
+              ><span class="checkbox-span"
+                ><svg class="check-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use></svg></span
+              >I accept the terms and conditions of the
+              <a class="policy-link" href="">Privacy Policy</a>
+            </label>
+          </div>
+          <button type="submit" class="modal-button">Send</button>
         </form>
       </div>
     </div>
