@@ -835,6 +835,7 @@ color: rgba(46, 47, 66, 0.4);
             cursor: pointer;
             display: block;
             margin: 0 auto;
+            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
             transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 margin-bottom: 24px;
         }
