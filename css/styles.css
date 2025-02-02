@@ -777,6 +777,7 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         height: 120px;
         resize: none;
         padding: 8px 16px;
+        background-color: transparent;
         outline: transparent;
         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -793,11 +794,18 @@ color: rgba(46, 47, 66, 0.4);
     border-color: #4D5AE5
 }
 
-.checkbox-label{
-display: flex;
-flex-direction: row;
-    align-items: center;
+.checkbox-div{
     margin-bottom: 24px;
+}
+
+.checkbox-label{
+    
+   margin-bottom: 24px;
+font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
 }
 
 .policy-link{
@@ -837,13 +845,13 @@ font-weight: 500;
 }
 
 .checkbox-span{
-display: inline-flex;
+    display: inline-flex;
     width: 16px;
     height: 16px;
     border-radius: 2px;
         border: 1px solid rgba(46, 47, 66, 0.4);
         margin-right: 8px;
-        display: flex;
+        
         justify-content: center;
         align-items: center;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
